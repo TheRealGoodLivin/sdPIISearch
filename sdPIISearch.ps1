@@ -66,4 +66,5 @@ $allFiles = Get-ChildItem –Path $drivePath -Recurse -Force -ErrorAction Silent
     }
 }
 
-Write-Host "$(get-date -format yyyy/MM/dd-HH:mm:ss) - Script Complete" -ForegroundColor Green
+Write-Host "`nScript Completed: " -ForegroundColor DarkYellow -nonewline; Write-Host "$(get-date -format yyyy/MM/dd-HH:mm:ss)" -ForegroundColor White;
+Write-Host "Report Saved: " -ForegroundColor DarkYellow -nonewline; Write-Host "$($reportPath)" -ForegroundColor White;
